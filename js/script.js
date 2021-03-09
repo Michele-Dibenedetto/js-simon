@@ -22,7 +22,7 @@ $(document).ready(function() {
             do {
                 numUtente = parseInt(prompt("inserisci un numero"));
                 // se il numero inserito dall'utente è uguale ad uno dei numeri presenti nella lista allora richiede un nuovo numero
-            } while (isInArrey(listNumUtente, numUtente) == true);
+            } while (isInArrey(listNumUtente, numUtente) == true || numUtente > 100);
             // se il numero inserito dall'utente è uguale ad uno dei numeri generati randomicamente allora inserisci quel numero dentro l'arrey che contiene i numeri giusti
             if (isInArrey(listNumRandom, numUtente) == true) {
                 numeriGiusti.push(numUtente);
